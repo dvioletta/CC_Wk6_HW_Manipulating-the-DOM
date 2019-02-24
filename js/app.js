@@ -28,13 +28,14 @@ const createAlbumListItem = function (form) {
   artist.textContent = form.artist.value;
   albumListItem.appendChild(artist);
 
+  const year = document.createElement('h4');
+  year.textContent = form.year.value;
+  albumListItem.appendChild(year);
+
   const category = document.createElement('p');
   category.textContent = form.category.value;
   albumListItem.appendChild(category);
 
-  const year = document.createElement('h4');
-  year.textContent = form.year.value;
-  yearListItem.appendChild(year);
 
   return albumListItem;
 }
