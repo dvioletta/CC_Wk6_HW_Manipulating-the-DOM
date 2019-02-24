@@ -36,6 +36,14 @@ const createAlbumListItem = function (form) {
   category.textContent = form.category.value;
   albumListItem.appendChild(category);
 
+  const medium = document.createElement('p');
+  medium.textContent = form.medium.value;
+  albumListItem.appendChild(medium);
+
+  // const checkbox = document.getElementById("checkbox") = true;
+  //
+  // albumListItem.appendChild(checkbox)
+
 
   return albumListItem;
 }
