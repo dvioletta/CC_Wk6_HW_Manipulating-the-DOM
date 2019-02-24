@@ -32,6 +32,10 @@ const createAlbumListItem = function (form) {
   category.textContent = form.category.value;
   albumListItem.appendChild(category);
 
+  const year = document.createElement('h4');
+  year.textContent = form.year.value;
+  yearListItem.appendChild(year);
+
   return albumListItem;
 }
 
